@@ -1,0 +1,118 @@
+    
+    #certifications{
+        overflow: hidden;
+        width: 100vw;
+        max-width: 60rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin: 0 auto;
+        padding: 0 1rem;
+    }
+    
+    .blocks {
+        display: flex;
+        justify-content: center;
+       
+    align-items: center;
+    
+    width: 100vw;
+    max-width: 65rem;
+    flex-wrap: wrap;
+      }
+      
+      .image-block {
+        position: relative;
+        width: 300px;
+        height: 20rem;
+        border-radius: 1rem;
+        overflow: hidden;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        transition: transform 0.5s;
+        object-fit: cover;
+    height: 20rem;
+    margin: 0.5rem;
+      }
+      
+      .image-block img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 1rem;
+        transition: opacity 0.5s;
+      }
+
+      .Title{
+        font-size: 3rem;
+        font-weight: 600;
+        padding-top: 2rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .Desc{
+        font-weight: 400;
+        font-size: 1rem;
+        max-width: 51rem;
+        padding: 0 2rem;
+        margin-bottom: 1rem;
+    }
+      
+      .image-block .overlay {
+        position: absolute;
+        bottom: 0;
+        background: rgba(37, 37, 37, 0.6);
+        color: #fff;
+        width: 100%;
+        text-align: center;
+        padding: 1rem;
+        border-bottom-left-radius: 1rem;
+        border-bottom-right-radius: 1rem;
+        transition: all 0.5s;
+      }
+      
+      .image-block:hover img {
+        opacity: 0.5;
+      }
+      
+      .image-block:hover .overlay {
+        background: rgba(0, 0, 0, 0.8);
+        bottom: 0;
+        top: 0;
+        padding: 6rem 1rem;
+        border-radius: 1rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .image-block .overlay h2 {
+        margin: 0;
+        font-size: 1.5rem;
+        display: none;
+      }
+      
+      .image-block:hover .overlay h2 {
+        display: block;
+      }
+      
+      .image-block .overlay p {
+        margin: 0.5rem 0 0;
+        font-size: 1rem;
+        opacity: 0.3;
+        transition: opacity 0.5s;
+      }
+      
+      .image-block:hover .overlay p {
+        opacity: 1;
+      }
+
+      
+
+      @media screen and (max-width:585px) {
+        .image-block{
+            height: 48vw;
+        }
+    }
